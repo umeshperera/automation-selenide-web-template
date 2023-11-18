@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>automation-selenide-web-template</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!--Dependency Target Versions-->
+        <!-- Check changelogs before updating dependencies -->
+        <selenideVersion>7.0.2</selenideVersion>
+        <junitVersion>5.10.1</junitVersion>
+        <cucumberJavaVersion>7.14.0</cucumberJavaVersion>
+        <cucumberJunitVersion>7.14.0</cucumberJunitVersion>
+        <cucumberPicoVersion>7.14.0</cucumberPicoVersion>
+        <slf4jVersion>2.0.9</slf4jVersion>
+        <filloVersion>1.22</filloVersion>
+        <fakerVersion>2.0.2</fakerVersion>
+        <apacheCommonsVersion>2.9.0</apacheCommonsVersion>
+        <apacheBeansUtilsVersion>1.9.4</apacheBeansUtilsVersion>
+    </properties>
+
+    <dependencies>
+        <!-- MVN Repo - https://mvnrepository.com/artifact/com.codeborne/selenide -->
+        <!-- Documentation - https://selenide.org/documentation.html -->
+        <!-- Usage - Core utilities/ High level selenium APIs for simplified UI testing -->
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenideVersion}</version>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+        <!-- Documentation - https://junit.org/junit5/docs/current/user-guide/#overview -->
+        <!-- Usage - Core Utilities/ Annotations -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junitVersion}</version>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <!-- Documentation - https://cucumber.io/docs/guides/ -->
+        <!-- Usage - BDD style formatting/ Annotations -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumberJavaVersion}</version>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <!-- Documentation - https://cucumber.io/docs/guides/ -->
+        <!-- Usage - BDD style formatting/ Annotations/ Cucumber Junit Support -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>${cucumberJunitVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+        <!-- Documentation - https://cucumber.io/docs/cucumber/state/?lang=java -->
+        <!-- Usage - Dependency injection/ Sharing state between steps -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumberPicoVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+        <!-- Documentation - https://www.slf4j.org/docs.html -->
+        <!-- Usage - Error logging/ !IMPORTANT - Internal Dependency -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4jVersion}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/com.codoid.products/fillo -->
+        <!-- Documentation - https://codoid.com/products/fillo/ -->
+        <!-- Usage - Interacting with Excel files/ Perform CRUD operation on Excel files -->
+        <dependency>
+            <groupId>com.codoid.products</groupId>
+            <artifactId>fillo</artifactId>
+            <version>${filloVersion}</version>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/net.datafaker/datafaker -->
+        <!-- Documentation - https://www.datafaker.net/documentation/getting-started/ -->
+        <!-- Usage - Generate random test data -->
+        <dependency>
+            <groupId>net.datafaker</groupId>
+            <artifactId>datafaker</artifactId>
+            <version>${fakerVersion}</version>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/org.apache.commons/commons-configuration2 -->
+        <!-- Documentation - https://commons.apache.org/proper/commons-configuration/ -->
+        <!-- Usage - CRUD operation on dataset.properties -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-configuration2</artifactId>
+            <version>${apacheCommonsVersion}</version>
+        </dependency>
+
+        <!-- MVN Repo - https://mvnrepository.com/artifact/commons-beanutils/commons-beanutils -->
+        <!-- Documentation - https://commons.apache.org/proper/commons-beanutils/ -->
+        <!-- Usage - !IMPORTANT - Internal Dependency (commons-configuration2) -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${apacheBeansUtilsVersion}</version>
+        </dependency>
+    </dependencies>
+</project>
