@@ -26,7 +26,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
-//Custom imports
+//Custom Imports
 import base.webExecution;
 import dataProviders.configFileReader;
 import dataProviders.constantConfigs;
