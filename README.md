@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/umeshperera/automation-selenide-web-template">
-    <img src="repo-resources/repo-logo.png" alt="Logo" width="500" height="80">
+    <img src=".github/assets/repo-logo.png" alt="Logo" width="500" height="80">
   </a>
 
 <h3 align="center">Automation Framework - Template</h3>
