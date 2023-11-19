@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/umeshperera/automation-selenide-web-template">
-    <img src="logo.png" alt="Logo" width="500" height="80">
+    <img src="repo-resources/repo-logo.png" alt="Logo" width="500" height="80">
   </a>
 
 <h3 align="center">Automation Framework - Template</h3>
@@ -67,15 +67,16 @@ This project, built upon Selenide, Cucumber, and JUnit, is not just an automatio
 To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
-| Requirement | Description |
-| ------ | ------ |
-| Java SE Development Kit 19 or latest | [Download][ReQJava] |
-| IntelliJ IDEA (recommended) or eclipse | IntelliJ IDEA community edition (free version) is more than enough [Download][ReqIDE] |
-| Browser | • Chrome <br> • Firefox <br> • Internet Explorer <br> • Edge <br> • Safari (macOS Only) |
+| Requirement                            | Description                                                                             |
+|----------------------------------------|-----------------------------------------------------------------------------------------|
+| Java SE Development Kit 19 or latest   | [Download][ReQJava]                                                                     |
+| IntelliJ IDEA (recommended) or eclipse | IntelliJ IDEA community edition (free version) is more than enough [Download][ReqIDE]   |
+| Browser                                | • Chrome <br> • Firefox <br> • Internet Explorer <br> • Edge <br> • Safari (macOS Only) |
 
 ### Open Project
+
 1. **Clone the repo**
-```sh
+```sh 
   git clone git@github.com:umeshperera/automation-selenide-web-template.git
 ```
 2. **Create Your Own Repo:**<br>
@@ -92,13 +93,13 @@ To get a local copy up and running follow these simple steps.
 ## Usage
 
 You can execute your scripted tests using CLI
-```Java
+```Maven
   mvn clean test
 ```
 or
 
 You can execute selected cucumber scenarios by refererring it like follows.
-```Java
+```Maven
   mvn test -Dcucumber.filter.tags="@Login"
 ```
 
